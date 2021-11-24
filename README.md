@@ -1,5 +1,10 @@
 # MultiQC plugin: customize general statistics
 
+```
+# install module in same environment as multiqc
+git push origin master
+```
+
 ## Example
 
 ```
