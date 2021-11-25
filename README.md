@@ -11,7 +11,7 @@ git push origin master
 # Add the following entry to your multiqc config
 # This example add picard metrics PF_READS_ALIGNED
 # all fields used by multiqc, for example title, can be set
-customize_general_stats:
+multiqc_cgs:
   Picard:
     PF_READS_ALIGNED:
       title: "M Aligned reads"
