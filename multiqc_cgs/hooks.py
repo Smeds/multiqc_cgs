@@ -16,6 +16,7 @@ def after_modules():
         if len(data) > 0:
             namespace_map[list(data.items())[0][1]['namespace']] = index
     if config_data:
+        log.info("multiqc_cgs: " + config.multiqc_cgs_version + " : modifying General Statistics!")
         for data_namespace in config_data:
             added_entries = []
             for field in config_data[data_namespace]:
