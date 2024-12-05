@@ -12,11 +12,13 @@ git push origin master
 # This example add picard metrics PF_READS_ALIGNED
 # all fields used by multiqc, for example title, can be set
 multiqc_cgs:
-  Picard:
-    PF_READS_ALIGNED:
-      title: "M Aligned reads"
-      description: "Number of million reads in bam from Picard"
-      format: "{:.1f}"
-      shared_key: "read_count"
+  "Picard: HsMetrics":
+    ZERO_CVG_TARGETS_PCT:
+      title: "Target bases with zero coverage [%]"
+      description: "Target bases with zero coverage [%] from Picard"
+      min: 0
+      max: 100
+      scale: "RdYlGn-rev"
+      format: "{:.2%}"
 
 ``
