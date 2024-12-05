@@ -9,7 +9,7 @@ git push origin master
 
 ```
 # Add the following entry to your multiqc config
-# This example add picard metrics PF_READS_ALIGNED
+# This example add picard hsmetrics ZERO_CVG_TARGETS_PCT
 # all fields used by multiqc, for example title, can be set
 multiqc_cgs:
   "Picard: HsMetrics":
