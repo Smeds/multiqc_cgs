@@ -21,4 +21,7 @@ multiqc_cgs:
       scale: "RdYlGn-rev"
       format: "{:.2%}"
 
-``
+```
+
+## Compatibility
+For multiqc_cgs v1.0.0 and later, [MultiQC](https://seqera.io/multiqc/) >v1.21 is needed.
