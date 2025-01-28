@@ -9,14 +9,19 @@ git push origin master
 
 ```
 # Add the following entry to your multiqc config
-# This example add picard metrics PF_READS_ALIGNED
+# This example add picard hsmetrics ZERO_CVG_TARGETS_PCT
 # all fields used by multiqc, for example title, can be set
 multiqc_cgs:
-  Picard:
-    PF_READS_ALIGNED:
-      title: "M Aligned reads"
-      description: "Number of million reads in bam from Picard"
-      format: "{:.1f}"
-      shared_key: "read_count"
+  "Picard: HsMetrics":
+    ZERO_CVG_TARGETS_PCT:
+      title: "Target bases with zero coverage [%]"
+      description: "Target bases with zero coverage [%] from Picard"
+      min: 0
+      max: 100
+      scale: "RdYlGn-rev"
+      format: "{:.2%}"
 
-``
+```
+
+## Compatibility
+For multiqc_cgs v1.0.0 and later, [MultiQC](https://seqera.io/multiqc/) >v1.21 is needed.

@@ -3,7 +3,7 @@
 core here to add in extra functionality. """
 
 import logging
-from multiqc.utils import report, config
+from multiqc import report, config
 from collections import OrderedDict
 
 log = logging.getLogger('multiqc')
