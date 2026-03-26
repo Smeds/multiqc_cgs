@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "multiqc_cgs"
-version = "1.0.0"
+version = "2.0.0"
 description = "MultiQC plugin to add extra columns to the General Statistics table"
 license = { text = "GPL-3.0-or-later" }
 authors = [{ name = "Patrik Smeds", email = "patrik.smeds@scilifelab.uu.se" }]

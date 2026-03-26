@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.0](https://github.com/Smeds/multiqc_cgs/compare/v1.0.0...v2.0.0) (2026-03-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* update supported python versions
+* migrate to pyproject.toml and release-please v4
+
+### Features
+
+* migrate to pyproject.toml and release-please v4 ([438bc50](https://github.com/Smeds/multiqc_cgs/commit/438bc500cd77930d2fc67e19bd4920eff76cf7ac))
+* update supported python versions ([1ef2d42](https://github.com/Smeds/multiqc_cgs/commit/1ef2d42a5f792a5c1c5613e3d1864f029da83ebd))
+
 ## 1.0.0 (2025-01-30)
 
 
